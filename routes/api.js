@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const testActions = require('../controlers/test');
 
-router.get('/', testActions.homepage)
+const noteActions = require('../actions/notes');
+
+router.post('/', noteActions.saveNote)
 
 
 module.exports = router;
