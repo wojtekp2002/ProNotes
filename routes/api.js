@@ -11,9 +11,9 @@ router.get('/notes/:id', noteActions.getNote)
 //zapisywanie notatek
 router.post('/notes', noteActions.saveNote)
 //edytowanie notatek 
-router.put('/notes', noteActions.updateNote)
+router.put('/notes/:id', noteActions.updateNote)
 //usuwanie notatek
-router.delete('/notes', noteActions.deleteNote)
+router.delete('/notes/:id', noteActions.deleteNote)
 
 
 module.exports = router;
