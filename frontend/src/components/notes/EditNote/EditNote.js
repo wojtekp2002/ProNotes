@@ -26,7 +26,7 @@ export default function EditNote (props) {
             title: title,
             body: desc,
             date: date,
-            id: props.id
+            _id: props.id
         }
         props.onEdit(note);
     }

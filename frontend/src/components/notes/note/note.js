@@ -13,7 +13,7 @@ function Note (props) {
             title: props.title, 
             body: props.body, 
             date: props.date, 
-            id: props.id
+            _id: props.id
         })
     }
 
