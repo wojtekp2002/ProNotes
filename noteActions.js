@@ -8,7 +8,6 @@ class NoteActions {
             const title = req.body.title;
             const body = req.body.body;
             const date = req.body.date;
-
             const note = new Note({title, body, date});
 
             await note.save();
