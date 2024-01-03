@@ -7,6 +7,7 @@ import EditNote from "./EditNote/EditNote";
 import axios from 'axios';
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
+import Mainbar from "./Mainbar";
 
 class Notes extends React.Component {
     
@@ -82,6 +83,8 @@ class Notes extends React.Component {
         return(
             <div>
                 <NotificationContainer/>
+
+                <Mainbar/>
 
                 <p>Moje notatki: </p>
 
